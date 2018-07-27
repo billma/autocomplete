@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.autocomplete {
+  display: inline-block;
+  position:relative;
+}
+.autocomplete-input:focus + .autocomplete-suggest {
+  display: block;
+}
+
+.autocomplete-suggest {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 3px #ccc;
+  margin: 0;
+  padding-left:10px;
+}
+
+.autocomplete-suggest li {
+  list-style-type: none;
+  text-align: left;
+}
+.autocomplete-suggest li:hover {
+  cursor: pointer;
+  background: #ccc;
+}
+
+
+.datepicker {
+  display: inline-block;
+}
+.datepicker .calender {
+  box-shadow: 0 0 5px #ccc; 
+  padding: 5px;
+}
+.datepicker .control {
+  display: flex;
+  width: 100%;
+}
+
+.datepicker .control .next,
+.datepicker .control .prev,
+{
+  flex-grow: 1;
+}
+.datepicker .control .current {
+  flex-grow: 2;
+}
+.datepicker .calender .content
+{
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  height: 200px;
+  align-items: center;
+  justify-content: left;
+}
+.datepicker .day,
+.datepicker .block,
+.datepicker .weekday
+{
+  flex: 0 0 1;
+  width: 40px;
+}
+.datepicker .day:hover{
+  cursor: pointer;
+  background-color: #efefef;
+}
+
+
+.datepicker .selected{
+  background-color: #ccc;
+}
+
